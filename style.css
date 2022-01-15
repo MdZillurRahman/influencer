@@ -41,7 +41,7 @@ body{
     transition: transform 2s ease-in-out;
 }
 .starting-image:hover{
-    transform: rotate(360deg);
+    transform: rotate(540deg) scale(-0.5);
 }
 .logos{
     width: 1000px;
@@ -77,6 +77,21 @@ hr{
     justify-content: center;
     margin-bottom: 50px;
 }
+.cart{
+    display: none;
+    position: absolute;
+    width: 300px;
+    top: 0;
+}
+.cart p{
+    color: white;
+    text-align: center;
+}
+.collection:hover .cart{
+    line-height: 240px;
+    display: block;
+    background-color: rgba(180, 180, 180, 0.7);
+}
 .collections{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -90,6 +105,7 @@ hr{
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     padding: 15px 0 15px 15px;
+    position: relative;
 }
 .star .fa-star{
     color:Orange;
@@ -132,7 +148,7 @@ hr{
     padding: 10px;
     margin: 10px;
 }
-@media only screen and (max-width: 719px) {
+@media only screen and (max-width: 721px) {
     main{
         width: 95%;
     }
@@ -163,8 +179,8 @@ hr{
         grid-template-columns: repeat(1, 1fr);
     }
     .see-more{
-     margin-right: 65px;
-     margin-bottom: 40px;
+     margin-right: 100px;
+     margin-bottom: 80px;
     }
     .final-image{
         padding-left: 30px;
@@ -203,6 +219,10 @@ hr{
     .collections{
         grid-template-columns: repeat(2, 1fr);
     }
+    .see-more{
+     margin-right: 100px;
+     margin-bottom: 80px;
+    }
     .final-image{
         padding-left: 30px;
     }
@@ -212,5 +232,4 @@ hr{
     .final-text h1{
         font-size: 20px;
     }
-
 }
