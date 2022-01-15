@@ -145,6 +145,9 @@ hr{
     .collections{
         grid-template-columns: repeat(1, 1fr);
     }
+    .final-text{
+        margin-left: 30px;
+    }
     .final-text h1{
         font-size: 20px;
     }
