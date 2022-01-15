@@ -75,7 +75,6 @@ hr{
 .popular-collection{
     display: flex;
     justify-content: center;
-    height: 1662px; 
     margin-bottom: 50px;
 }
 .collections{
@@ -130,5 +129,25 @@ hr{
     padding: 10px;
     margin: 10px;
 }
+@media only screen and (max-width: 688px) {
+    main{
+        width: 95%;
+    }
+    .container{
+        display: block;
+    }
+    .starting-image{
+        padding: 0;
+    }
+.logos{
+    display: none;
+}
+    .collections{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .final-text h1{
+        font-size: 20px;
+    }
 
+}
 
