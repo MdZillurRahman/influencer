@@ -41,7 +41,7 @@ body{
     transition: transform 2s ease-in-out;
 }
 .starting-image:hover{
-    transform: rotate(540deg) scale(-0.5);
+    transform: rotate(360deg);
 }
 .logos{
     width: 1000px;
@@ -68,9 +68,9 @@ hr{
 }
 .collection-headline{
     text-align: center;
-     font-size: 40px;
-     margin-bottom: 50px;
-     font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-weight: 700;
  }
 .popular-collection{
     display: flex;
@@ -132,7 +132,7 @@ hr{
     padding: 10px;
     margin: 10px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 719px) {
     main{
         width: 95%;
     }
@@ -177,9 +177,12 @@ hr{
     }
 
 }
-@media only screen and (min-width: 701px) and (max-width:992px){
+@media only screen and (min-width: 720px) and (max-width:992px){
     main{
         width: 100%;
+    }
+    .starting-text h1{
+        font-size: 45px;
     }
     .starting-image{
         padding: 0;
@@ -189,7 +192,7 @@ hr{
         justify-content: center;
         align-items: center;
         grid-row-gap: 10px;
-        grid-column-gap: 15px;
+        grid-column-gap: 25px;
         grid-template-columns: repeat(4, 1fr);
     }
     .logos{
