@@ -100,8 +100,11 @@ hr{
 .see-more{
     text-decoration: none;
     color:#E02C6D;
-    text-align: end;
-
+ display: flex;
+ justify-content: end;
+ align-items: center;
+ margin-right: 170px;
+ margin-bottom: 30px;
 }
 .final-image{
     flex: 40%;
@@ -129,7 +132,7 @@ hr{
     padding: 10px;
     margin: 10px;
 }
-@media only screen and (max-width: 688px) {
+@media only screen and (max-width: 700px) {
     main{
         width: 95%;
     }
@@ -139,11 +142,32 @@ hr{
     .starting-image{
         padding: 0;
     }
-.logos{
-    display: none;
-}
+    hr{
+        display: none;
+    }
+    .serviceProvider-logo{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-row-gap: 10px;
+        grid-column-gap: 15px;
+        margin: 10px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .logos{
+        width: auto;
+        align-items: center;
+        margin-bottom: 100px;
+    }
     .collections{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .see-more{
+     margin-right: 65px;
+     margin-bottom: 40px;
+    }
+    .final-image{
+        padding-left: 30px;
     }
     .final-text{
         margin-left: 30px;
@@ -153,4 +177,37 @@ hr{
     }
 
 }
+@media only screen and (min-width: 701px) and (max-width:992px){
+    main{
+        width: 100%;
+    }
+    .starting-image{
+        padding: 0;
+    }
+    .serviceProvider-logo{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-row-gap: 10px;
+        grid-column-gap: 15px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .logos{
+        width: auto;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .collections{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .final-image{
+        padding-left: 30px;
+    }
+    .final-text{
+        margin-left: 10px;
+    }
+    .final-text h1{
+        font-size: 20px;
+    }
 
+}
