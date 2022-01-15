@@ -44,11 +44,33 @@ body{
     margin-top: 30px;
 }
 hr{
-    color: lightgray;
+    border : 0;
+  height: 1px; 
+  background-image: linear-gradient(to right, rgba(200, 200, 200, 0.3), rgba(200, 200, 200, 0.75), rgba(200, 200, 200, 0.3));
 }
 .serviceProvider-logo{
     display: flex;
     margin: 25px;
     justify-content: space-evenly;
     align-items: center;
+}
+.popular-collection h1{
+   text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.collection{
+    width: 315px;
+    height: 476px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 15px 0 15px 15px;
+}
+.star .fa-star{
+    color:Orange;
+}
+.star .fa-star-half-alt{
+    color: Orange ;
 }
