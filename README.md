@@ -1,2 +1,2 @@
 # influencer
- [Live Hosting Link](https://wood-world-146a1.web.app/)
+ [Live Hosting Link](https://influencergearzisan.netlify.app/)
